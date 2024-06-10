@@ -10,7 +10,7 @@ export default function Layout() {
     DMRegular: require("../assets/fonts/DMSans-Regular.ttf"),
   });
 
-  // usecallback은 usememo와 유사합니다. 다만 usememo는 값을 usecallback은 함수를 메모리에 저장하는 차이를 가집니다.
+  // usecallback은 usememo와 유사, 다만 usememo는 값을 usecallback은 함수를 메모리에 저장
   const onLayoutRootView = useCallback(async () => {
     if (fontLoaded) {
       await SplashScreen.hideAsync();
